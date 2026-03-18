@@ -16,9 +16,9 @@ o średnią elementów.
 Utwórz program zarządzający ocenami studentów.
 1. Utwórz Dictionary<string, List<int>>.
 2. Dodaj studentów:
-"Jan" → 3, 4, 5
-"Anna" → 5, 5, 4
-"Piotr" → 2, 3, 3
+* "Jan" → 3, 4, 5
+* "Anna" → 5, 5, 4
+* "Piotr" → 2, 3, 3
 3. Wyświetl wszystkich studentów i ich oceny.
 4. Oblicz średnią ocen dla każdego studenta.
 5. Znajdź studenta z najwyższą średnią.
