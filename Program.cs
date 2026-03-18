@@ -99,6 +99,25 @@
             A.Contains(3);
             B.Contains(10);
 
+            /*----------------------------------------------------
+                                Zadanie. 6
+            ----------------------------------------------------*/
+
+            LinkedList<string> dni = new LinkedList<string>();
+            dni.AddFirst("Poniedziałek");
+            var node = dni.AddLast("Piątek");
+            dni.AddBefore(node, "Wtorek");
+            var node2 = dni.AddBefore(node, "Środa");
+            dni.AddBefore(node, "Czwartek");
+            dni.AddFirst("Niedziela");
+            dni.AddLast("Sobota");
+            dni.AddAfter(node2, "Święto");
+            dni.Remove("Wtorek");
+            
+            foreach (string dzien in dni) { Console.WriteLine(dzien); }
+            Console.WriteLine(dni.First());
+            Console.WriteLine(dni.Last());
+
         }
     }
 }
