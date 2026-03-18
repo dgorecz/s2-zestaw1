@@ -27,12 +27,11 @@ Utwórz program zarządzający ocenami studentów.
 Stwórz program symulujący kolejkę w banku.
 1. Utwórz Queue<string>.
 2. Dodaj klientów:
-
-Adam
-Kasia
-Marek
-Ola
-Tomek
+* Adam
+* Kasia
+* Marek
+* Ola
+* Tomek
 3. Wyświetl osobę pierwszą w kolejce.
 4. Obsłuż 2 osoby (Dequeue).
 5. Dodaj nowych klientów: Paweł, Karolina.
@@ -58,25 +57,24 @@ Napisz program, który:
 HashSet<int> A = {1,2,3,4,5,6}
 HashSet<int> B = {4,5,6,7,8,9}
 2. Wyświetla:
-• sumę zbiorów (Union)
-
-• część wspólną (Intersect)
-• różnicę zbiorów (Except)
+* sumę zbiorów (Union)
+* część wspólną (Intersect)
+* różnicę zbiorów (Except)
 3. Sprawdza czy:
-• zbiór A zawiera element 3
-• zbiór B zawiera element 10
+* zbiór A zawiera element 3
+* zbiór B zawiera element 10
 
 ## Zadanie 6 – LinkedList<T> (operacje na liście dwukierunkowej)
 Napisz program, który:
 1. Tworzy LinkedList<string> z dniami tygodnia:
-Poniedziałek
-Wtorek
-Środa
-Czwartek
-Piątek
+* Poniedziałek
+* Wtorek
+* Środa
+* Czwartek
+* Piątek
 2. Dodaje:
-• Niedziela na początek
-• Sobota na koniec
+* Niedziela na początek
+* Sobota na koniec
 3. Wstaw "Święto" po Środzie.
 4. Usuń element Wtorek.
 5. Wyświetl wszystkie elementy listy.
