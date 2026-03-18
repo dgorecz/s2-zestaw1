@@ -37,9 +37,8 @@
             {
                 Console.WriteLine($"\n{pair.Key} Oceny: ");
                 foreach (var oceny in pair.Value)
-                {
-                    Console.WriteLine(oceny);
-                }
+                { Console.WriteLine(oceny); }
+
                 Console.WriteLine($"Średnia: {pair.Value.Average()}");
             }
             var najlepszyStudent = dict.OrderByDescending(x => x.Value.Average()).First();
@@ -65,10 +64,26 @@
             klienci.Enqueue("Karolina");
 
             foreach (string klient in klienci)
-            {
-                Console.WriteLine(klient);
-            }
+            { Console.WriteLine(klient); }
+
             Console.WriteLine(klienci.Count());
+
+            /*----------------------------------------------------
+                                Zadanie. 4
+            ----------------------------------------------------*/
+
+            Stack<string> stack = new Stack<string>();
+            stack.Push("napisano tekst");
+            stack.Push("dodano zdanie");
+            stack.Push("usunięto słowo");
+            stack.Push("dodano akapit");
+
+            Console.WriteLine(stack.Peek());
+            stack.Pop();
+            stack.Pop();
+
+            foreach(string s in stack)
+            { Console.WriteLine(s); }
         }
     }
 }
