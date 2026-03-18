@@ -23,6 +23,28 @@
 
             Console.WriteLine($"\nSuma = {listaSuma}" +
                 $"\nŚrednia = {listaSrednia}");
+
+            /*----------------------------------------------------
+                                Zadanie. 2
+            ----------------------------------------------------*/
+
+            Dictionary<string, int[]> dict = new Dictionary<string, int[]>() {
+                {"Jan", new int[] {3, 4, 5} },
+                {"Anna", new int[] {5, 5, 4 } },
+                {"Piotr", new int[] {2, 3, 3 } } };
+
+            foreach (var pair in dict)
+            {
+                Console.WriteLine($"\n{pair.Key} Oceny: ");
+                foreach (var oceny in pair.Value)
+                {
+                    Console.WriteLine(oceny);
+                }
+                Console.WriteLine($"Średnia: {pair.Value.Average()}");
+            }
+            var najlepszyStudent = dict.OrderByDescending(x => x.Value.Average()).First();
+            Console.WriteLine($"Student z najlepszą średnią: {najlepszyStudent.Key}");
+
         }
     }
 }
