@@ -84,6 +84,21 @@
 
             foreach(string s in stack)
             { Console.WriteLine(s); }
+
+            /*----------------------------------------------------
+                                Zadanie. 5
+            ----------------------------------------------------*/
+
+            HashSet<int> A = new HashSet<int>() {1, 2, 3, 4, 5, 6};
+            HashSet<int> B = new HashSet<int>() {4, 5, 6, 7, 8, 9};
+
+            foreach (int num in A.Union(B)) { Console.WriteLine(num); }
+            foreach (int num in A.Intersect(B)) { Console.WriteLine(num); }
+            foreach (int num in A.Except(B)) { Console.WriteLine(num); }
+
+            A.Contains(3);
+            B.Contains(10);
+
         }
     }
 }
