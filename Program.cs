@@ -45,6 +45,30 @@
             var najlepszyStudent = dict.OrderByDescending(x => x.Value.Average()).First();
             Console.WriteLine($"Student z najlepszą średnią: {najlepszyStudent.Key}");
 
+            /*----------------------------------------------------
+                                Zadanie. 3
+            ----------------------------------------------------*/
+
+            Queue<string> klienci = new Queue<string>();
+            klienci.Enqueue("Adam");
+            klienci.Enqueue("Kasia");
+            klienci.Enqueue("Marek");
+            klienci.Enqueue("Olek");
+            klienci.Enqueue("Tomek");
+
+            Console.WriteLine(klienci.First());
+
+            klienci.Dequeue();
+            klienci.Dequeue();
+
+            klienci.Enqueue("Paweł");
+            klienci.Enqueue("Karolina");
+
+            foreach (string klient in klienci)
+            {
+                Console.WriteLine(klient);
+            }
+            Console.WriteLine(klienci.Count());
         }
     }
 }
